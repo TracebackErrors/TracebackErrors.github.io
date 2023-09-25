@@ -7,15 +7,15 @@
 .text-container {
     flex: 1;
     text-align: center;
-    margin-right: 20px; /* Adjust the margin as needed */
-    padding: 20px; /* Add padding to create space for the shadow */
+    margin-right: 20px;
+    padding: 10px; 
 }
 
 .MainTitle {
     font-family: 'Mooli', sans-serif;
     text-align: center;
     font-size: 50px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .CodeDescription {
@@ -24,7 +24,15 @@
 }
 
 .imgcode {
-    height: 500px; /* Set the height of the image */
+    height: 500px; 
     float: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    margin-right: 30px;
+}
+
+@media only screen and (min-width: 480px) {
+    .imgcode {
+        width: 43.6%;
+        height: auto;
+    }
 }
