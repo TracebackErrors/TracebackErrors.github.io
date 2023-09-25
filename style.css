@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .text-container {
     flex: 1;
     text-align: center;
@@ -25,10 +31,17 @@
 
 .imgcode {
     height: 500px; 
-    float: left;
+    float: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    margin-right: 30px;
+    margin-right: 42.5px;
 }
+
+
+.githubtext {
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+}
+
 
 @media only screen and (min-width: 480px) {
     .imgcode {
